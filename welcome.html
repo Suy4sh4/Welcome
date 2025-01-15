@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    />
+    <title>Welcome to shridwarkadhish</title> <!-- Updated Title -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      body {
+        background: linear-gradient(45deg, #fbf3df, #f4efe6, #ffffff);
+        background-size: 200% 200%;
+        animation: gradientShift 10s ease infinite;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .glass-morphism {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(20px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .button-hover-effect {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .button-hover-effect:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .animated-text {
+        background: linear-gradient(90deg, #019863, #017a4f, #a18249);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: textGradient 5s ease infinite;
+      }
+
+      @keyframes textGradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+      <!-- Header -->
+      <header class="w-full max-w-4xl flex items-center justify-between border-b border-[#F4EFE6] py-4 px-6">
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="flex items-center gap-3 hover:underline"> <!-- Added link and hover effect -->
+            <div class="w-5 h-5 text-[#1C160C]">
+              <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#1C160C] text-lg font-bold">shridwarkadhish</h2>
+          </a>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="w-full max-w-md flex flex-col items-center text-center mt-8 glass-morphism p-8">
+        <h1 class="text-[#1C160C] text-3xl font-bold mb-2 animated-text">Welcome to shridwarkadhish</h1> <!-- Updated Main Heading -->
+        <p class="text-[#1C160C] text-base mb-6">Secure your digital life with the world's most trusted password manager</p>
+
+        <!-- Buttons -->
+        <div class="w-full flex flex-col gap-4">
+          <a
+            href="login.html"
+            class="w-full py-2.5 px-6 bg-[#019863] text-white text-sm font-bold rounded-full button-hover-effect text-center"
+          >
+            Log In
+          </a>
+          <a
+            href="signup.html"
+            class="w-full py-2.5 px-6 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold rounded-full button-hover-effect text-center"
+          >
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Divider -->
+        <p class="text-[#A18249] text-sm my-6">Or, continue with</p>
+
+        <!-- Social Login Options -->
+        <div class="w-full flex justify-center gap-4">
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-[#F4EFE6] text-[#1C160C] text-sm font-medium py-2 px-4 rounded-full button-hover-effect"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"></path>
+            </svg>
+            Google
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-[#F4EFE6] text-[#1C160C] text-sm font-medium py-2 px-4 rounded-full button-hover-effect"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+              ></path>
+            </svg>
+            Facebook
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-2 bg-[#F4EFE6] text-[#1C160C] text-sm font-medium py-2 px-4 rounded-full button-hover-effect"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"
+              ></path>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="w-full max-w-4xl text-center mt-8 py-4 border-t border-[#F4EFE6]">
+        <p class="text-[#A18249] text-sm">
+          By continuing, you agree to our <a href="#" class="underline">Terms of Service</a> and
+          <a href="#" class="underline">Privacy Policy</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
