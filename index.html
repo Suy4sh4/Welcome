@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Poppins:wght@400;500;600;700&display=swap"
     />
-    <title>Welcome to shridwarkadhish</title> <!-- Updated Title -->
+    <title>Welcome to shridwarkadhish</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style>
@@ -40,12 +40,13 @@
       }
 
       .button-hover-effect {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
       }
 
       .button-hover-effect:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        background-color: #017a4f; /* Darker green on hover */
       }
 
       .animated-text {
@@ -67,6 +68,41 @@
           background-position: 0% 50%;
         }
       }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 640px) {
+        .glass-morphism {
+          padding: 1.5rem; /* Reduce padding on small screens */
+        }
+
+        h1 {
+          font-size: 1.5rem; /* Smaller heading on small screens */
+        }
+
+        p {
+          font-size: 0.875rem; /* Smaller text on small screens */
+        }
+
+        .button-hover-effect {
+          padding: 0.75rem 1.5rem; /* Smaller buttons on small screens */
+        }
+      }
     </style>
   </head>
   <body>
@@ -74,7 +110,7 @@
       <!-- Header -->
       <header class="w-full max-w-4xl flex items-center justify-between border-b border-[#F4EFE6] py-4 px-6">
         <div class="flex items-center gap-3">
-          <a href="index.html" class="flex items-center gap-3 hover:underline"> <!-- Added link and hover effect -->
+          <a href="index.html" class="flex items-center gap-3 hover:underline">
             <div class="w-5 h-5 text-[#1C160C]">
               <svg viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -88,8 +124,8 @@
       </header>
 
       <!-- Main Content -->
-      <main class="w-full max-w-md flex flex-col items-center text-center mt-8 glass-morphism p-8">
-        <h1 class="text-[#1C160C] text-3xl font-bold mb-2 animated-text">Welcome to shridwarkadhish</h1> <!-- Updated Main Heading -->
+      <main class="w-full max-w-md flex flex-col items-center text-center mt-8 glass-morphism p-8 fade-in">
+        <h1 class="text-[#1C160C] text-3xl font-bold mb-2 animated-text">Welcome to shridwarkadhish</h1>
         <p class="text-[#1C160C] text-base mb-6">Secure your digital life with the world's most trusted password manager</p>
 
         <!-- Buttons -->
